@@ -5,3 +5,9 @@
 .Entry{
     font-size: 120%;
 }
+.exit{
+    text-align: center;
+    font-size: 140%;
+    color: black;
+    border-style: solid;
+}
