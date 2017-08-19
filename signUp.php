@@ -1,6 +1,5 @@
 <?php
-echo $_POST["registerEmail"]<br>;
-    if(isset($POST["registerEmail"])) {// makes sure username has been entered
+    if(isset($_POST["registerEmail"]) && isset($_POST["registerPassword"]) ) {// makes sure username has been entered
     //Variable Initialization
     $host= "localhost";
     $user= "root";
@@ -10,7 +9,6 @@ echo $_POST["registerEmail"]<br>;
     $getPassword;
     $getEmail= $_POST['registerEmail'];
     $getPassword=$_POST['registerPassword'];
-echo "email";
     //Establishing connection to db
     $conn =mysqli_connect($host, $user, $password, $database)
       or die("Could not connect! <br>" .mysqli_connect_error() );
@@ -20,8 +18,6 @@ echo "email";
     //Closing db
     mysqli_close($conn);
   }
-else{
-echo "didnt work";
-}
+header('Location: loginScreen.html');
 ?>
 
