@@ -18,6 +18,6 @@
     //Closing db
     mysqli_close($conn);
   }
-header('Location: loginScreen.html');
+header('Location: loginScreen.php');
 ?>
 

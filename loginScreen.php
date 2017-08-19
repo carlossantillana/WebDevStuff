@@ -14,7 +14,7 @@
         </div>
 
         <div class = "signOut">
-            <a class = "button" id= "signOut">Sign Out </a>
+            <button class = "button" id= "signOut">Sign Out </button>
         </div>
 
         <div class = "actions">
@@ -23,5 +23,10 @@
         </div>
 
     </div>
+    <script type ="text/javascript">
+    document.getElementById("signOut").onclick = function() {
+            location.href = "index.php?signOut"
+    }
+    </script>
 </body>
 </html>

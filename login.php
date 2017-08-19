@@ -16,7 +16,7 @@
       $query= mysqli_query($conn, "SELECT * FROM login WHERE email = '$getEmail' and password = '$getPassword'");
       $rows = mysqli_num_rows($query);
       if ($rows == 1 ){
-        header('Location: loginScreen.html');
+        header('Location: loginScreen.php');
       }
       else{
   	header('Location: index.php?invalidLogin');

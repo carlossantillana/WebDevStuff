@@ -16,6 +16,13 @@
         </div>
         <?php
     }
+    if(isset($_GET['signOut'])){
+        ?>
+        <div class="exit">
+            You have successfully logged out<br>
+        </div>
+        <?php
+    }
     ?>
     <div class = "background">
     <div class = "header">
