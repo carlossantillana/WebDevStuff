@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST["enterEmail"]) && isset($_POST["enterPassword"]) ) {// makes sure username has been entered
     //Variable Initialization
-    
+
     $host= "localhost";
     $user= "root";
     $password = "Lapras#131";
@@ -19,7 +19,7 @@
         header('Location: loginScreen.html');
       }
       else{
-  	header('Location: index.html');
+  	header('Location: index.php?invalidLogin');
       }
       //Closing db
       mysqli_close($conn);

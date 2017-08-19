@@ -1,0 +1,7 @@
+.header, .Entry, .loginForm, .signUpForm{
+    text-align: center;
+
+}
+.Entry{
+    font-size: 120%;
+}
